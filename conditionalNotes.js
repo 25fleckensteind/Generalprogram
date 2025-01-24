@@ -61,6 +61,50 @@ if (7 < 5){
     console.log("7 is NOT less than 5");
 }
 
-// a test for equality.
-let testNumber = 6;
-if(testNUmber > )
+// a test for equality. we are going to check if testNUmber is 
+// greater than, less than, or equal to 6
+// let testNumber = 6;
+// if(testNumber > 6){
+//     console.log(`${testNumber} is greater than 6.`);
+// }else{
+//     if (testNumber < 6){
+//         console.log(`${testNumber} is less than 6.`);
+//     } else {
+//         console.log(`${testNumber} is equal to 6.`);
+//     }
+// }
+
+// as a rule, you want to avoid nested if/else statement. There are two
+// better approaches:
+//if-else if-else
+let testNumber = 9;
+
+if (testNumber < 6){
+    console.log(`${testNumber} is less than 6.`);
+} else if (testNumber == 6) {
+    console.log(`${testNumber} is equal to 6.`);
+} else {
+    console.log(`${testNumber} is greater than 6.`);
+}
+
+
+//Make a grade generator. Make a variable called TestGrade.
+// 0-59 = F
+//60-69 =D
+//70-79 = C
+//80-89 = B
+//90-100 = A
+
+let gradeNumber = 89
+
+if (gradeNumber < 0){
+    console.log("you are loser you have F");
+} else if (gradeNumber < 60) {
+    console.log("you are doing okay with a D");
+} else if (gradeNumber < 70) {
+    console.log("you are almost to B");
+} else if (gradeNumber < 80) {
+    console.log("Almost passing class you have B");
+} else if (gradeNumber < 90) {
+    console.log("You are now passing class with A");
+}
