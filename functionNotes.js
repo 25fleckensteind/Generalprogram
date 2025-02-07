@@ -30,17 +30,17 @@ functionName(argument1, argument2, etc);
 // global score : the main program
 
 // An exmple to demostraite scope
-let test1 = 1
-let test2 = 5
+// let test1 = 1
+// let test2 = 5
 
-function add1(num) {
-    test2 = test2 + 1
-    return num + 1;
-}
+// function add1(num) {
+//     test2 = test2 + 1
+//     return num + 1;
+// }
 
-console.log(add1(test1));
-console.log(test1);
-console.log(test2);
+// console.log(add1(test1));
+// console.log(test1);
+// console.log(test2);
 
 // To summarize: a function can change a value of a global variable, but
 // only if that variable is used, BY NAME, within the function. Variables
@@ -48,12 +48,78 @@ console.log(test2);
 
 // we can make opitional parameters
 
-function greetings(name = "Mr.Smith"){
-    console.log(`Hello, ${name}`);
-}
+// function greetings(name = "Mr.Smith"){
+//     console.log(`Hello, ${name}`);
+// }
 
-greetings("Mr.Smith");
-greetings("Lucas");
-greetings("Abbie");
-greetings("Sam");
-greetings("Logan");
+// greetings("Mr.Smith");
+// greetings("Lucas");
+// greetings("Abbie");
+// greetings("Sam");
+// greetings("Logan");
+
+
+// Anonymous functions. Anonymous functions are freguently used if a function
+//expects to take another function as a parameter. Basically, all this means is that
+//the function dosen't have a function name.
+
+// (function(){
+//     alert("this is an anonymous function");
+// });
+
+// An actual example of how to use an anonymous function
+// function logKey(event) {
+//     console.log(`You pressed the "${event.key}"`)
+// }
+
+// this.addEventListener("keydown", logKey);
+
+// ^^^^^^ how we would normally achieve this goal. But we can use an anonymous
+// function instead.
+
+// this.addEventListener("keydown", function (event) {
+//     console.log(`You pressed ${event.key}`);
+// });
+
+// Another way to creat anonymous function is the "arrow function" syntax
+// this.addEventListener("keydown", (event) => {
+//     console.log(`You pressed ${event.key}`);
+// })
+
+// AN example to examine scope:
+// let x = 1;
+
+// function a() {
+//     let y = 2;
+//     output(x);
+//     output(z)
+// }
+
+// function b() {
+//     let z = 3;
+//     output(x);
+// }
+
+// function output(value) {
+//     console.log(`Value = ${value}`);
+// }
+
+// output(x);
+// a();
+// b();
+
+//FUnctions can have "return values". This is something that the function
+// send back to the global scope. some functions don't HAVE a return value.
+
+// function randomLessThan(num) {
+//     console.log(Math.floor(Math.random() * num));
+// }
+
+// randomLessThan(4);
+
+// // produce a number between 1 and 4
+// console.log(randomLessThan(4) + 1)
+
+// IF YOU WANT A FUNCTION TO INTERACT WITH SOMETHING ELSE,
+// YOU USALLY NEED A RETURN VALUE
+
