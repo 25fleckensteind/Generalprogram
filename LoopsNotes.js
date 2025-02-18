@@ -148,3 +148,14 @@ for (let i = 0; i < 21; i++) {
     }
     console.log(i);
 }
+
+
+// Summary:
+// THREE KINDS OF LOOP: For, While, D0...While
+// A Do...While loop is the only one of these that MUST execute at least once
+// break - is a key word that will eject you from the loop all together
+// continue - skip the rest of the current interation
+
+
+
+
