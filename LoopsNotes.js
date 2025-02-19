@@ -203,15 +203,79 @@ as failsafes ife ou think you might create an infinite loop.*/
 /* do math or other operations with the values in an array */
 // Function to calculate the distance between 2 points on the X-y plane.
 // dist = sqrt((x2 - x1)^2 + (y2 - y1)^2
-let obj1 = [3,5];
-let obj2 = [7, 11];
+// let obj1 = [3,5];
+// let obj2 = [7, 11];
 
-let dist = Math.sqrt((obj2[0] - obj1[0])**2 + (obj2[1] - obj1[1])**2);
-console.log(dist);
+// let dist = Math.sqrt((obj2[0] - obj1[0])**2 + (obj2[1] - obj1[1])**2);
+// console.log(dist);
 
-let prime = [2, 3, 5, 7, 11, 13, 17];
-let i = 0;
-while (i < primes.length){
-    console.log(primes[i]);
-    i++;
+// let prime = [2, 3, 5, 7, 11, 13, 17];
+// let i = 0;
+// while (i < primes.length){
+//     console.log(primes[i]);
+//     i++;
+//}
+
+// console.log(primes[-1]);  // = undiefined
+// console.log(primes.at(-1));
+//Array methods
+//.pop() - finds the last element of the array, returns it, and deletes
+//         it from the array
+
+// console.log(primes);
+// console.log(primes.pop());
+// console.log(primes);
+
+//Here is a code snippet to find the sum of all primes
+//less than 20
+
+// let sum = 0;
+// while (primes.length > 0){
+//     sum += primes.pop();
+//     console.log(primes, sum);
+// }
+
+// console.log(sum);
+
+
+// the inverse of .pop() is .push()
+// .Push() adds an element to the end of the array.
+
+let fruits = ["Apple", "Banana", "canteloupe"];
+
+// console.log(fruits);
+
+// fruits.push("watermelon");
+
+// console.log(fruits);
+
+//The problem with pop and push, is that you can only modify the end of the array.
+//if you want to modify the BEGINNING of the array, you need different methods:
+
+//Shift() - shift is pop, but at the beginning.
+// console.log(fruits.shift());
+// console.log(fruits);
+
+// unshift() - is push, but at the beginning
+// fruits.unshift("apricot");
+// console.log(fruits);
+
+// push and unshift can add multiple elements at once
+// fruits.push("orange", "Peach");
+// fruits.unshift("lemon", "Pineapple");
+
+// console.log(fruits);
+
+// Using loops with arrays.
+// here's an "old" style of printing all of the array values:
+
+for (let i = 0; 1 < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+// there is a different kind of way to do this, using a
+// for... of loop:
+
+for (let fruit of fruits) {
+    console.log(fruits);
 }
