@@ -241,7 +241,7 @@ as failsafes ife ou think you might create an infinite loop.*/
 // the inverse of .pop() is .push()
 // .Push() adds an element to the end of the array.
 
-let fruits = ["Apple", "Banana", "canteloupe"];
+// let fruits = ["Apple", "Banana", "canteloupe"];
 
 // console.log(fruits);
 
@@ -269,13 +269,47 @@ let fruits = ["Apple", "Banana", "canteloupe"];
 // Using loops with arrays.
 // here's an "old" style of printing all of the array values:
 
-for (let i = 0; 1 < fruits.length; i++){
-    console.log(fruits[i]);
-}
+// for (let i = 0; 1 < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
 
 // there is a different kind of way to do this, using a
 // for... of loop:
 
-for (let fruit of fruits) {
-    console.log(fruits);
-}
+// for (let fruit of fruits) {
+//     console.log(fruits);
+// }
+
+/* Something to knote about arrays:
+array.length is returnig the value of the last index + 1, it is nor actually 
+counting the number of values in the array */
+
+// let grades = ["A", "A", "B", , "B", "A"];
+// console.log(grades);
+// console.log(grades.length);
+
+// let badArray = [];
+// badArray[314] = "pie";
+// console.log(badArray.length);
+// console.log(badArray);
+
+/*multidimensional Arrays 
+A multidimesional array, is an array that is, in turn,
+made up of more arrays. 
+*/
+
+// an array holding XY coordinates of 5 points:
+// 3,4 and 1,2 and 9,15 and 37,11 and 215,1
+let coordinates = [
+    [3,4], 
+    [1,2], 
+    [9,15], 
+    [37,11], 
+    [215,1]
+]
+
+console.log(coordinates[4][0]);
+
+coordinates[4][0] = 21;
+
+console.log(coordinates);
