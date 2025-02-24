@@ -59,8 +59,8 @@ for (begin; condition; step) {
 }
 
 example */
-// for (let j = 0; j < 5; j++){
-//     console.log(`j = ${j}`);
+// for (let i = 0; i < 5; i++){
+//     console.log(`i = ${i}`);
 // }
 
 // for (let i = 0; i != 7; i += 2){
