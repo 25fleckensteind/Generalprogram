@@ -18,13 +18,7 @@
 
 //******************************
 //Task #3
- for (let i = 1; i <= 100; i++){
-     sum += i;
-
-     if (Date.now() > now + 100){
-         console.log("Nuh huh");
-         break;
-     }
- }
-
-console.log(sum);
+input = 0;
+while(input <= 100){
+    input = prompt("Put number higher than 100 to unlock Bat Scott")
+}
