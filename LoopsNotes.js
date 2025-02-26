@@ -300,16 +300,97 @@ made up of more arrays.
 
 // an array holding XY coordinates of 5 points:
 // 3,4 and 1,2 and 9,15 and 37,11 and 215,1
-let coordinates = [
-    [3,4], 
-    [1,2], 
-    [9,15], 
-    [37,11], 
-    [215,1]
-]
+// let coordinates = [
+//     [3,4], 
+//     [1,2], 
+//     [9,15], 
+//     [37,11], 
+//     [215,1]
+// ]
 
-console.log(coordinates[4][0]);
+// console.log(coordinates[4][0]);
 
-coordinates[4][0] = 21;
+// coordinates[4][0] = 21;
 
-console.log(coordinates);
+// console.log(coordinates);
+
+
+/* Methods are functions tied to a dataType.
+
+e.g. arr.pop() is the pop method, which removes the last item of the array
+
+-we've learned 4 array methods; pop, push, shift, and unshift
+- arr.length is not technically a method, since it dosen't carry the ()
+- arr.at() which works like the [] notation, but allows you to use negative indices
+ex: arr = [a,b,c,d,e,f,g] => arr.at(-2) => "f"
+
+NEW METHODS:
+.join() => allows you to combine the terms of an array into a string,
+and you can specify the separator
+*/
+
+//EXAMPLE:
+// let arrayyForString = ["A", "B", "C", "D"];
+//console.log(arrayyForString.join());  // this outputs a single string connected by commas;
+
+// console.log(arrayForString.join("o.O"));  // This outputs 
+
+/* more methods:
+.concat() => concatenate, combine arrays
+*/
+
+// Mike Brady marries Carol Martin
+// let mikeSons = ["Greg", "Peter", "Booby"];
+// let carolsDaughters = ["Marcia", "Jan", "Cindy"];
+
+// let bradyBunch = mikesSons.concat(carolsDaughters);
+// console.log(bradyBunch);
+
+
+/* Final 2 methods for now:
+-splice() and .Slice(
+
+.splice() adds new items to an array
+.slice() removes a piece of an array
+*/
+
+// EXAMPLE: Splice()
+// let fruits = ["Apple", "Orange", "Mango", "Banana", "Kiwi"];
+// fruits.splice(2,0, "Mango", "Papaya");
+// console.log(fruits);
+//.Splice(targetIndex, howManyItemsRemovedAfterInserted, stuffToBeAdded...)
+
+//You can actually use splice to delete items from the middle of an array.
+// fruits.splice(3,1);
+// console.log(fruits);
+
+//.Slice()returns a new array from a subsection (or Slice) of an original array.
+// let fruitsILike = fruits.slice(1,5);
+// console.log(fruitsILike);
+// .slice(indexToStart, indexToEndButNotUse)
+
+/* Strings actually behave a lot like arrays, and have some similar methods:
+string.length => length of string
+*/
+
+let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+console.log(alpha.charAt(2));
+console.log(alpha.at(7));    // .at allows negative indicies, while charAt does not.
+console.log(alpha[12]);
+
+/*
+at() - allows negative indices
+IF you put in a value that dosen't exist, like:
+alpha[28] => Undefined
+alpha.charAt => ""
+
+ALSO:observe this EXAMPLE:*/
+// alpha[1] = "Q";
+// console.log(alpha);  // [] are "read-only".
+
+/* 3 methods to remove part of a string:
+.slice(start, end)
+.substring(start, end)  //Values less than 0 are treated as 0
+^ for both of these, if you omit the end value, it goes to the end of the string^
+.substr(string, length)*/
