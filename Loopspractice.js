@@ -18,7 +18,11 @@
 
 //******************************
 //Task #3
-input = 0;
-while(input <= 100){
-    input = prompt("Put number higher than 100 to unlock Bat Scott")
-}
+// input = 0;
+// while(input <= 100){
+//     input = prompt("Put number higher than 100 to unlock Bat Scott")
+// }
+
+//***********************************************************************
+//Task #4
+//function sumInput()
