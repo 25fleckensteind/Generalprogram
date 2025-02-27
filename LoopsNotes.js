@@ -373,11 +373,11 @@ and you can specify the separator
 string.length => length of string
 */
 
-let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-console.log(alpha.charAt(2));
-console.log(alpha.at(7));    // .at allows negative indicies, while charAt does not.
-console.log(alpha[12]);
+// console.log(alpha.charAt(2));
+// console.log(alpha.at(7));    // .at allows negative indicies, while charAt does not.
+// console.log(alpha[12]);
 
 /*
 at() - allows negative indices
@@ -389,8 +389,29 @@ ALSO:observe this EXAMPLE:*/
 // alpha[1] = "Q";
 // console.log(alpha);  // [] are "read-only".
 
+
 /* 3 methods to remove part of a string:
 .slice(start, end)
 .substring(start, end)  //Values less than 0 are treated as 0
 ^ for both of these, if you omit the end value, it goes to the end of the string^
 .substr(string, length)*/
+
+let testString = "The quick brown fax jumped over the lazy dog";
+
+let string1 = testString.slice(-5,-1);
+let string2 = testString.substring(-5,-1);
+let string3 = testString.substr(3,10);
+
+console.log(string1);
+console.log(string2);
+console.log(string3);
+
+/* two final string methods:
+.toUpperCase() -> makes the string all upper case
+.to LowerCase() -> makes the string all lower case
+*/
+
+let testString2 = "ThE QUIck Brown FOX jumPEd OveR ThE LAZy Dog";
+
+console.log(testString2.toUpperCase());
+console.log(testString.toLowerCase());
